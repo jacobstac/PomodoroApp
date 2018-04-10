@@ -5,17 +5,13 @@
  */
 
 import React, { Component } from 'react';
-import {
-  Text,
-  View,
-  AppRegistry
-} from 'react-native';
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header.js';
 
 // Create a component
-const App = () => {
-    return (
-      <Text>Pomodoro</Text>
+const App = () => (
+      <Header />
     );
-}
+
 // Register to device
  AppRegistry.registerComponent('Pomodoro', () => App);
