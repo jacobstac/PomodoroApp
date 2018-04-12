@@ -3,11 +3,11 @@ import React from 'react';
 import { Text, View } from 'react-native';
 
 // make the component
-const Header = () => {
+const Header = (props) => {
   const { textStyle, viewStyle } = styles;
   return (
     <View style={viewStyle}>
-      <Text style={textStyle}>POMODORO</Text>
+      <Text style={textStyle}>{props.infoTillHeader}</Text>
     </View>
   );
 };
@@ -18,11 +18,12 @@ const styles = {
       backgroundColor: '#ff0066',
       justifyContent: 'center',
       alignItems: 'center',
-      paddingTop: 15,
+      paddingTop: 20,
       shadowColor: '#b30047',
       shadowOffset: { width: 0, height: 4},
       shadowOpacity: 0.8,
       elevation: 2,
+
       position: 'relative'
       // height: 60
 
