@@ -1,37 +1,37 @@
 [
 {
-title: "Flervarre",
-color: "#FF0",
-today: 0,
-image: "https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pic.png",
-total: 32
+"title": "Flervarre",
+"color": "#FF0",
+"today": 0,
+"image": "https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pic.png",
+"total": 32
 },
 {
-title: "Databas",
-color: "#FF0",
-today: 0,
-image: "https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pic.png",
-total: 10
+"title": "Databas",
+"color": "#FF0",
+"today": 0,
+"image": "https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pic.png",
+"total": 10
 },
 {
-title: "Clean Appartment",
-color: "#FF0",
-today: 0,
-image: "https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pic.png",
-total: 20
+"title": "Clean Appartment",
+"color": "#FF0",
+"today": 0,
+"image": "https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pic.png",
+"total": 20
 },
 {
-title: "MVK",
-color: "#FF0",
-today: 0,
-image: "https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pic.png",
-total: 15
+"title": "MVK",
+"color": "#FF0",
+"today": 0,
+"image": "https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pic.png",
+"total": 15
 },
 {
-title: "ProSam",
-color: "#FF0",
-today: 0,
-image: "https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pic.png",
-total: 5
+"title": "ProSam",
+"color": "#FF0",
+"today": 0,
+"image": "https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pic.png",
+"total": 5
 }
 ]

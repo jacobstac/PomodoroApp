@@ -17,7 +17,7 @@ class PomoList extends Component {
 
     renderPomos() {
         return this.state.pomos.map(pomos => 
-        <AlbumDetail key = { pomos.title } pomoToDetails={pomos}/>)
+        <AlbumDetail key = {pomos.title} pomoToDetails={pomos}/>)
     }
 
     render() {
