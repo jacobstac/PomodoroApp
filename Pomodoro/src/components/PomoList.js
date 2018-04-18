@@ -21,19 +21,18 @@ class PomoList extends Component {
     render() {
         console.log(this.state)
         return (
-            //<View Style = {pomoStyle}>
+            // <View Style = { pomoStyle }>
             <View>
                 { this.renderPomos() }
             </View>
         );
     }
-/*
-    const styles = {
+
+    /* const styles = {
         pomoStyle : {
             justifyContent: 'center'
         }
-    };
-*/
+    }; */
 }
 
 
