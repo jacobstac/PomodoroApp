@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
+import AlbumDetail from './PomoDetail';
 
 class PomoList extends Component {
 
@@ -15,11 +16,12 @@ class PomoList extends Component {
     }
 
     renderPomos() {
-        return this.state.pomos.map(pomos => <Text>{ pomos.title }</Text>)
+        return this.state.pomos.map(pomos => 
+        <AlbumDetail key = { pomos.title } pomoToDetails={pomos}/>)
     }
 
     render() {
-        console.log(this.state)
+        //console.log(this.state)
         return (
             // <View Style = { pomoStyle }>
             <View>
