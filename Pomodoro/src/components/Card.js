@@ -4,7 +4,7 @@ import { View } from 'react-native';
 const Card = (props) => {
     return ( 
         <View style={ styles.containerStyle } >
-            { props.children }
+            { props.children /*skickar en hel komponent med props, tror jag*/} 
         </View>
     );
 };
