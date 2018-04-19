@@ -1,12 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
+import Card from './Card';
 
 // just functional not component level state
 const PomoDetail = (props) => {
     return (
-        <View>
+        <Card>
             <Text>{ props.pomoToDetails.title }</Text>
-        </View>
+        </Card>
     );
 
 };

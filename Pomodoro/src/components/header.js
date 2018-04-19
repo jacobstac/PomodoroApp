@@ -20,8 +20,8 @@ const styles = {
       alignItems: 'center',
       paddingTop: 20,
       shadowColor: '#b30047',
-      shadowOffset: { width: 0, height: 4},
-      shadowOpacity: 0.8,
+      shadowOffset: { width: 0, height: 5},
+      shadowOpacity: 0.2,
       elevation: 2,
 
       position: 'relative'
