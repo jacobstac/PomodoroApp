@@ -11,41 +11,23 @@ import axios from 'axios';
 
 //state = { pomos: []} // initial base/empty state
 // Create a component
-class App extends Component {
+const App = () => (
 
-  state = { pomos: []}
+  <View >
+    <Header infoTillHeader={'POMODORO'} />
+    <PomoList />
+    {/*Add New pomodoro buttom*/}
+  </View>
 
-  componentWillMount() {
-      axios.get('https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pomos.json')     //axios.get('https://rallycoding.herokuapp.com/api/music_albums')
-          .then(response => this.setState({ pomos: response.data }));
-  }
-  
-
-  render() {
-    return (
-      <View style = { styles.container }>
-      <Header infoTillHeader = {'POMODORO'}/>
-      <FlatList
-        data = { this.state.pomos } 
-        keyExtractor = { (x, index) => x.title}
-        renderItem = { ({item}) => <Text>{item.title}</Text> }
-      />
-      {/*<PomoList /> */}
-    </View>
-    );
-
-
-  }
-
-}
+);
 
 const styles = {
   container: {
-    flex: 1,
-    //justifyContent: 'center',
-    //alignItems: 'center',
-
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
   }
 }
+
 // Register to device
- AppRegistry.registerComponent('Pomodoro', () => App);
+AppRegistry.registerComponent('Pomodoro', () => App);
