@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import axios from 'axios';
-import PomoDetail from './PomoDetail';
+import AlbumDetail from './PomoDetail';
 
 
 class PomoList extends Component {
@@ -17,13 +17,12 @@ class PomoList extends Component {
     }
 
     renderPomos() {
-        console.log('renderPomos');
-        return this.state.pomos.map(pomos => // map gör en lista av json objektet typ om jag fattat det rätt
-        <PomoDetail key = {pomos.title} pomoToDetails={ pomos }/>) //här blir typ pomos.title primary key
+        return this.state.pomos.map(pomos => 
+        <AlbumDetail key = {pomos.title} pomoToDetails={pomos}/>)
     }
 
     render() {
-        console.log(this.state)
+        //console.log(this.state)
         return (
             // <View Style = { pomoStyle }>
             <View>
