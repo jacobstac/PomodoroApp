@@ -11,7 +11,7 @@ const ListCard = (props) => {
         <Text >Total: {props.toListCard.total} </Text>
         <Text >Today: {props.toListCard.today} </Text>
         <Image style={{width: 50, height: 50}}
-          source={{uri: 'https://raw.githubusercontent.com/jacobstac/PomodoroApp/dynamic/pic.png'}}
+          source={{uri: 'https://raw.githubusercontent.com/jacobstac/PomodoroApp/dynamic/pomo.png'}}
         />
 
     </View>
