@@ -19,8 +19,24 @@ export default StyleSheet.create({
   textStyle: {
     fontSize: 60,
     color: '#F9BF3B',
-    // ,textAlign: 'center'
+    //textAlign: 'center',
   },
+
+  textStyle24: {
+    fontSize: 24,
+    color: '#F9BF3B',
+    //fontWeight: 'bold'
+    textAlign: 'justify',
+  },
+
+  cardContainerStyle: {
+    borderBottomWidth: 1,
+    padding: 5,
+    justifyContent: 'center', // 'space-around'
+    flexDirection: 'column', //flexa vertikalt, 'row' om horizontellt
+    borderColor: "#00B16A",
+    position: 'relative',
+},
 
 
 });

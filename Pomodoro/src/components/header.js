@@ -1,7 +1,7 @@
 // import libaries for making this component
 import React from 'react';
 import { Text, View } from 'react-native';
-import styles from '../styles/stylesHeader.js'
+import styles from '../styles/Styles.js'
 
 // make the component
 const Header = (props) => {
