@@ -12,13 +12,13 @@ class PomoList extends Component {
     /* componentWillMount utförs is samma stund som PomoList ska läggas på skärmen.
     Detta är bra när man t.ex ska hämta data */
     componentWillMount() {
-        axios.get('https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pomos.json')
+        axios.get('https://raw.githubusercontent.com/jacobstac/PomodoroApp/dynamic/pomos.json')
             .then(response => this.setState({ pomos: response.data }));
     }
     render() {
         //console.log(this.state)
         return (
-            <View  >
+            <View >
                 <FlatList
                     data={this.state.pomos}
                     keyExtractor={(x, index) => x.title}    

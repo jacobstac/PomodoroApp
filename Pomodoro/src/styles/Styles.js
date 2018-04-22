@@ -7,7 +7,7 @@ export default StyleSheet.create({
     backgroundColor: '#2ABB9B',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 20,
+    paddingTop: 30,
     shadowColor: '#b30047',
     shadowOffset: { width: 0, height: 5 },
     shadowOpacity: 0.2,
@@ -17,7 +17,7 @@ export default StyleSheet.create({
   },
 
   textStyle: {
-    fontSize: 60,
+    fontSize: 40,
     color: '#F9BF3B',
     //textAlign: 'center',
   },
@@ -32,8 +32,9 @@ export default StyleSheet.create({
   cardContainerStyle: {
     borderBottomWidth: 1,
     padding: 5,
-    justifyContent: 'center', // 'space-around'
-    flexDirection: 'column', //flexa vertikalt, 'row' om horizontellt
+    alignItems: 'center',
+    justifyContent: 'space-between', // 'space-around'
+    flexDirection: 'row', //flexa vertikalt, 'row' om horizontellt
     borderColor: "#00B16A",
     position: 'relative',
 },

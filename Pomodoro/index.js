@@ -18,7 +18,7 @@ const App = () => (
     //justifyContent: 'space-between',
     backgroundColor: "#26C281"
   }} >
-    <Header infoTillHeader={'POMODORO'} />
+    <Header infoTillHeader={'POMODORO HERO'} />
     <View style = {{justifyContent:  'flex-start', flex: 10}}>
     <PomoList />
     </View>
