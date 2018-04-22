@@ -18,17 +18,18 @@ class PomoList extends Component {
     render() {
         //console.log(this.state)
         return (
-            
-            <FlatList
-                data={this.state.pomos}
-                keyExtractor={(x, index) => x.title}
-                renderItem={({ item }) => 
-                <Text >
-                    <Text >{item.title} </Text>
-                    <Text >{item.total} </Text>
- 
-                </Text>}
-            />
+            <View style = {{justifyContent: 'center' } }>
+                <FlatList
+                    data={this.state.pomos}
+                    keyExtractor={(x, index) => x.title}
+                    renderItem={({ item }) =>
+                        <Text >
+                            <Text >{item.title} </Text>
+                            <Text >{item.total} </Text>
+
+                        </Text>}
+                />
+            </View>
         );
     }
 }
