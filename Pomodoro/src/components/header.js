@@ -1,7 +1,7 @@
 // import libaries for making this component
 import React from 'react';
 import { Text, View } from 'react-native';
-import styles from '../styles/styles.js'
+import styles from '../styles/stylesHeader.js'
 
 // make the component
 const Header = (props) => {
@@ -12,7 +12,6 @@ const Header = (props) => {
     </View>
   );
 };
-
 
 
 // make the component aviable to other parts of the app

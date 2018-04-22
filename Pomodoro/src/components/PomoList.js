@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, FlatList, Text } from 'react-native';
 import axios from 'axios';
-import AlbumDetail from './PomoDetail';
+import ListCard from './ListCard';
 
 
 class PomoList extends Component {
@@ -12,7 +12,7 @@ class PomoList extends Component {
     /* componentWillMount utförs is samma stund som PomoList ska läggas på skärmen.
     Detta är bra när man t.ex ska hämta data */
     componentWillMount() {
-        axios.get('https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pomos.json')     //axios.get('https://rallycoding.herokuapp.com/api/music_albums')
+        axios.get('https://raw.githubusercontent.com/jacobstac/PomodoroApp/cards/pomos.json')
             .then(response => this.setState({ pomos: response.data }));
     }
     render() {
@@ -21,13 +21,9 @@ class PomoList extends Component {
             <View style = {{justifyContent: 'center' } }>
                 <FlatList
                     data={this.state.pomos}
-                    keyExtractor={(x, index) => x.title}
+                    keyExtractor={(x, index) => x.title}    
                     renderItem={({ item }) =>
-                        <Text >
-                            <Text >{item.title} </Text>
-                            <Text >{item.total} </Text>
-
-                        </Text>}
+                        <ListCard toListCard = { item } />}
                 />
             </View>
         );

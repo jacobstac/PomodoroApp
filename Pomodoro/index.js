@@ -5,14 +5,13 @@
 
 import React, { Component } from 'react';
 import { AppRegistry, View, FlatList, Text } from 'react-native';
-import Header from './src/components/header.js';
+import Header from './src/components/Header.js';
 import PomoList from './src/components/PomoList';
 import axios from 'axios';
 
 //state = { pomos: []} // initial base/empty state
 // Create a component
 const App = () => (
-
   <View >
     <Header infoTillHeader={'POMODORO'} />
     <PomoList />
@@ -21,13 +20,6 @@ const App = () => (
 
 );
 
-const styles = {
-  container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-  }
-}
 
 // Register to device
 AppRegistry.registerComponent('Pomodoro', () => App);
