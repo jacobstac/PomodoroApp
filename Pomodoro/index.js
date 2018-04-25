@@ -4,7 +4,7 @@
  */
 
 import React, { Component } from 'react';
-import { AppRegistry, View, FlatList, Text } from 'react-native';
+import { AppRegistry, View, FlatList, Text, Image } from 'react-native';
 import Header from './src/components/Header.js';
 import PomoList from './src/components/PomoList';
 import axios from 'axios';
@@ -15,15 +15,15 @@ const App = () => (
   <View style={{
     flex: 1,
     flexDirection: 'column',
-    //justifyContent: 'space-between',
     backgroundColor: "#26C281"
   }} >
-    <Header infoTillHeader={'POMODORO HERO'} />
-    <View style = {{justifyContent:  'flex-start', flex: 10}}>
-    <PomoList />
+
+    <View style={{ flex: 10 }}>
+      <Header infoTillHeader={'POMODORO HERO'} />
+      <PomoList />
     </View>
     {/*Add New pomodoro buttom*/}
-    <Header style = {{justifyContent:  'flex-end'}} infoTillHeader={'Menu items'} />
+    <Header style={{ justifyContent: 'flex-end' }} infoTillHeader={'Menu items'} />
   </View>
 
 );

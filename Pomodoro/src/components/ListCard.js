@@ -11,7 +11,7 @@ const ListCard = (props) => {
         <Text style = { textStyle24 } >{props.toListCard.title} </Text>
         <Text >Total: {props.toListCard.total} </Text>
         <Text >Today: {props.toListCard.today} </Text>
-        <Image style={{width: 50, height: 50}}
+        <Image style={{width: 50, height: 50, resizeMode: 'contain'}}
           source={{uri: 'https://raw.githubusercontent.com/jacobstac/PomodoroApp/dynamic/pomo.png'}}
         />
 

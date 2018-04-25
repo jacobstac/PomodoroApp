@@ -9,7 +9,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     paddingTop: 30,
     shadowColor: '#b30047',
-    shadowOffset: { width: 0, height: 5 },
+    shadowOffset: { width: 0, height: 2, },
     shadowOpacity: 0.2,
     elevation: 2,
     position: 'relative',
