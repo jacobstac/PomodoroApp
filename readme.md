@@ -6,3 +6,7 @@ A pomodoro app made in react-native.
 </p>
 
 
+<p align="center">
+  <img src="pomo.png.png" width="350"/>
+</p>
+
